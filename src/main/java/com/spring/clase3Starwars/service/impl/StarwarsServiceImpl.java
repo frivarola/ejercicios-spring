@@ -5,9 +5,11 @@ import com.spring.clase3Starwars.dtos.ResponseDTO;
 import com.spring.clase3Starwars.model.CharacterSW;
 import com.spring.clase3Starwars.repository.impl.StarwarsRepositoryImpl;
 import com.spring.clase3Starwars.service.StarwarsService;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
+@Service
 public class StarwarsServiceImpl implements StarwarsService {
 
     private final StarwarsRepositoryImpl repo;
@@ -31,6 +33,7 @@ public class StarwarsServiceImpl implements StarwarsService {
         ResponseDTO response = new ResponseDTO();
         response.setCharactersName(result);
         response.setMsg("Ok");
+        response.setCount(result.size());
 
         return response;
     }

@@ -22,4 +22,12 @@ public class ResponseDTO {
     public void setCharactersName(ArrayList<String> charactersName) {
         this.charactersName = charactersName;
     }
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
 }

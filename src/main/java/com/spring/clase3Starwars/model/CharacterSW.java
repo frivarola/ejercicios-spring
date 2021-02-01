@@ -3,8 +3,8 @@ package com.spring.clase3Starwars.model;
 public class CharacterSW {
 
     private String name;
-    private Integer height;
-    private Integer mass;
+    private String height;
+    private String mass;
     private String hair_color;
     private String skin_color;
     private String eye_color;
@@ -21,19 +21,19 @@ public class CharacterSW {
         this.name = name;
     }
 
-    public Integer getHeight() {
+    public String getHeight() {
         return height;
     }
 
-    public void setHeight(Integer height) {
+    public void setHeight(String height) {
         this.height = height;
     }
 
-    public Integer getMass() {
+    public String getMass() {
         return mass;
     }
 
-    public void setMass(Integer mass) {
+    public void setMass(String mass) {
         this.mass = mass;
     }
 

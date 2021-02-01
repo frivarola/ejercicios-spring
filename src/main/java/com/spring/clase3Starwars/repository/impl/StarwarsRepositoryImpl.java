@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spring.clase3Starwars.model.CharacterSW;
 import com.spring.clase3Starwars.repository.StarwarsRepository;
+import org.springframework.stereotype.Repository;
 import org.springframework.util.ResourceUtils;
 
 import java.io.File;
@@ -13,7 +14,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class StarwarsRepositoryImpl implements StarwarsRepository {
     private static final ArrayList<CharacterSW> dataBase;
     static{
