@@ -1,8 +1,9 @@
 package com.spring.clase3Starwars.service;
 
-import java.util.ArrayList;
+import com.spring.clase3Starwars.dtos.RequestDTO;
+import com.spring.clase3Starwars.dtos.ResponseDTO;
 
 public interface StarwarsService {
 
-    ArrayList<String> getNameCharactersLike(String name);
+    ResponseDTO getNameCharactersLike(RequestDTO request);
 }
